@@ -1,0 +1,383 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+span {
+  color: #ffa500;
+}
+.container {
+  width: 65%;
+  margin: auto;
+  padding: 0 15px;
+}
+/* stard main */
+main {
+  width: 100%;
+  padding: 10px 0 50px;
+}
+main header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main header .logo img {
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+main header .logo h2 {
+  letter-spacing: 2px;
+}
+main header .logo h2 span {
+  color: orange;
+}
+main header .conect {
+  display: flex;
+  justify-content: last baseline;
+  align-items: center;
+  /* margin-right: -50px; */
+}
+main header .conect .call {
+  display: flex;
+  margin: 0 20px;
+}
+main header .conect .call h2 {
+  /* font-weight: 100; */
+  font-size: 18px;
+}
+main header .conect .call img,
+main header .conect .call h2 {
+  width: 20px;
+  background-color: #ffa500;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 10px;
+}
+main header .conect .call .text {
+  margin-top: 5px;
+}
+main header .conect .call .text h5 a {
+  color: #000;
+  text-decoration: none;
+}
+/* End main */
+/* start header */
+body > header {
+  width: 100%;
+  height: 70vh;
+  padding: 30px 0;
+  background-image: url(../img/service-9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+body > header .list {
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  background-color: #ffa500;
+  position: absolute;
+  left: 50%;
+  top: 00%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+body > header .list ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+body > header .list ul li {
+  margin: 10px;
+}
+body > header .list ul li i {
+  font-size: 12px;
+  transition: all ease-in-out 1s;
+}
+body > header .list ul .Bluse_List {
+  position: relative;
+  height: 100%;
+  z-index: 1000;
+}
+body > header .list .fa-list {
+  display: none;
+}
+body > header .list ul .Bluse_List ul {
+  width: 120px;
+  /* height:0px; */
+  /* padding: 10px; */
+  /* overflow: hidden; */
+  transform: scale(1, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  background-color: #ffff;
+  left: -20px;
+  border-radius: 10px;
+  top: 38px;
+  transition: 1s all ease-in-out;
+  text-align: center;
+  transform-origin: 50% 0%;
+  z-index: 1000 !important;
+}
+body > header .list ul .Bluse_List ul li {
+  letter-spacing: 1px;
+  z-index: 1000;
+  position: relative;
+}
+body > header .list ul .Bluse_List:hover ul {
+  /* height: 250px; */
+  transform: scale(1, 1);
+}
+body > header .list ul .Bluse_List:hover .fa-chevron-down {
+  transform: rotate(180deg);
+}
+body > header .list button {
+  padding: 5px 10px;
+  background-color: #1c2852;
+  border: 0;
+  color: #fff;
+}
+body > header .list ul .Bluse_List ul .Bluse_List_1 {
+  position: relative;
+}
+body > header .list ul .Bluse_List ul .Bluse_List_1 .ul {
+  position: absolute;
+  top: -2px;
+  /* background-color: #000; */
+  transform: scaleY(0);
+  transform-origin: 50% 0%;
+  transition: all ease-in-out 1s;
+  left: 103px;
+}
+
+body > header .list ul .Bluse_List ul .Bluse_List_1 .listul {
+  left: 85px;
+}
+body > header .list ul .Bluse_List ul .Bluse_List_1:hover .ul {
+  transform: scaleY(1);
+}
+body > header .list ul .Bluse_List ul .Bluse_List_1:hover .fa-chevron-right {
+  transform: rotate(180deg);
+}
+
+body > header .datels {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  z-index: 0 !important;
+}
+body > header .datels p {
+  padding: 10px;
+  /* position:absolute; */
+  width: fit-content;
+  background: #543e41bf;
+  color: #fff;
+  z-index: 0;
+}
+body > header .datels h2 {
+  margin: 10px;
+  color: #fff;
+}
+body > header .datels button {
+  padding: 10px;
+  background-color: #ffa500;
+  border: 0;
+  margin: 10px;
+}
+/* end header */
+/* first secont section */
+.first_Section {
+  width: 100%;
+  padding: 30px 0;
+}
+.first_Section .card {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first_Section .card .imge {
+  width: 40%;
+  height: 100%;
+  margin: 10px;
+}
+.first_Section .card .imge img {
+  width: 100%;
+  /* height: 100%; */
+  margin-top: 10px;
+}
+.first_Section .card .text p {
+  margin: 10px;
+  padding: 10px;
+}
+.first_Section .card .text h2 {
+  margin: 10px 20px;
+}
+.first_Section .card .text p:first-of-type {
+  background: #f4f4f4b5;
+  width: fit-content;
+}
+.first_Section .card .text .exp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.first_Section .card .text .exp .experints {
+  width: 40%;
+  background-color: #f4f4f4b5;
+  margin: 0 20px;
+}
+.first_Section .card .text .exp .experints h1 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+.first_Section .card .text .exp .list_exp {
+  margin: 0 20px;
+}
+.first_Section .card .text .exp .list_exp ul {
+  list-style: unset;
+}
+/* last first section */
+/* Start Second Section */
+.second_section {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f4f4f4b5;
+}
+.second_section p {
+  width: fit-content;
+  padding: 10px;
+  display: block;
+  margin: auto;
+}
+.second_section > p:first-of-type{
+  background-color: #fff;
+
+}
+.second_section h1 {
+  text-align: center;
+  margin: 10px;
+  color: #1b2751;
+}
+.second_section p {
+  text-align: center;
+}
+.second_section .Services {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+  row-gap: 100px;
+  gap: 10px;
+  padding: 10px;
+}
+.second_section .Services .serv{
+   /* width: 100%; */
+  margin: 10px;
+  background-color:#1c2852;
+  padding: 10px;
+  margin: 10px;
+  border: 1px #00f solid
+}
+.second_section .Services .serv img{
+  width:50px;
+  color: #ffa500;
+  margin:0 10px ;
+}
+.second_section .Services .serv h4{
+  color: #ffa500;
+  margin:0 10px;
+}
+.second_section .Services .serv p{
+  font-size:15px;
+  text-align: left;
+  /* background: transparent; */
+  color: #fff;
+}
+.second_section .Services .serv h3{
+  color: #fff;
+  margin:0 10px ;
+}
+/* End Second Section */
+/* Start Therd Section */
+  .therd_section{
+    width:100%;
+    padding:40px 0;
+  }
+  .therd_section > p{
+    width: fit-content;
+    background-color: #f4f4f4b5;
+    display: block;
+    padding:10px;
+    margin:auto;
+  }
+  .therd_section .box{
+    width:98%;
+    padding:10px;
+    height: 100%;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 80px;
+    column-gap: 80px;
+    gap: 5px;
+  }
+  
+  .therd_section .box .man img{
+    width: 80%;
+    display: block;
+    margin:auto;
+    height: 80%;
+  }
+  .therd_section .box .man h4,
+  .therd_section .box .man p{
+    text-align: center;
+    margin: 10px;
+  }
+  .therd_section .box .man p{
+  font-weight: lighter;
+  color: #bebebe;
+
+  }
+/* End Therd Section */
+/* Start Footer */
+footer{
+  width:100%;
+  background-color:#1c2852;
+  padding: 30px 10px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+}
+/* End Footer */
